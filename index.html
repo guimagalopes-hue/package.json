@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DoaFácil — Painel</title>
+    <style>
+      :root{ --azul:#004C5C; --verde:#2EAD68; --bege:#F5F3EE; --txt:#0B1F26; }
+      body{ margin:0; font-family: system-ui, Arial; background: var(--bege); color: var(--txt); }
+      header{ display:flex; align-items:center; gap:12px; padding:14px 18px; background:#fff; border-bottom:1px solid #eaeaea; }
+      .logo{ width:34px; height:34px; border-radius:8px; background:linear-gradient(130deg,var(--azul),var(--verde)); }
+      .brand{ font-weight:700; color:var(--azul); }
+      .wrap{ display:flex; min-height: calc(100vh - 64px); }
+      nav{ width:240px; background:#fff; border-right:1px solid #eee; padding:12px }
+      nav a{ display:block; padding:10px 12px; border-radius:8px; color:var(--azul); text-decoration:none; margin-bottom:8px }
+      nav a.active, nav a:hover{ background: #e7f5ef }
+      main{ flex:1; padding:20px }
+      .card{ background:#fff; border:1px solid #eee; border-radius:12px; padding:16px; margin-bottom:14px }
+      .kpis{ display:grid; grid-template-columns: repeat(4,1fr); gap:12px }
+      .btn{ background:var(--azul); color:#fff; border:none; padding:10px 14px; border-radius:8px; cursor:pointer }
+      .muted{ color:#667; font-size:13px }
+      table{ width:100%; border-collapse: collapse }
+      th, td{ padding:10px; border-bottom:1px solid #eee; text-align:left }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+      <div class="brand">DoaFácil — Painel</div>
+    </header>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
